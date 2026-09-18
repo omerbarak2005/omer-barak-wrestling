@@ -1,5 +1,5 @@
-/* Hallmark: Split Studio; editorial; Founder/Sport; N9 edge nav; Ft2 inline footer.
-   Audience: people researching Omer; purpose: athlete identity and sourced results.
+/* Hallmark: Long Document; editorial article; compact masthead and source colophon.
+   Audience: readers researching Omer; purpose: a continuous biographical story.
    Pre-emit critique: P5 H5 E4 S4 R5 V4. */
 @import url('./tokens.css');
 * { box-sizing: border-box; }
@@ -80,3 +80,26 @@ footer { border-top: 1px solid var(--color-rule); display: flex; flex-wrap: wrap
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } .button:active { transform:none; } }
 @media print { .dark { background:var(--color-paper); color:var(--color-ink); } .nav,.hero-bottom,.button { display:none; } .section,.coverage { padding-block:var(--space-lg); } }
+
+/* Article presentation. Existing layout rules remain available in version history. */
+.feature-shell { max-width: 1080px; margin: auto; padding-inline: var(--gutter); }
+.feature-masthead { display: flex; justify-content: space-between; align-items: center; gap: var(--space-md); padding-block: var(--space-md); border-bottom: 2px solid var(--color-ink); font-size: .8rem; letter-spacing: .055em; }
+.feature-masthead a { display:inline-flex; align-items:center; min-height:44px; white-space:nowrap; }
+.feature-title { padding-block: var(--space-xl) var(--space-lg); }
+.feature-date { font-size:.8rem; color:var(--color-muted); margin-block-end:var(--space-md); }
+.feature-title h1 { font-family:var(--font-editorial); font-weight:400; font-size:clamp(2rem,4.1vw,3.65rem); line-height:1.22; letter-spacing:-.035em; max-width:23ch; }
+.feature-deck { font-size:clamp(1.05rem,1.7vw,1.25rem); line-height:1.6; color:var(--color-muted); max-width:65ch; margin-block-start:var(--space-lg); }
+.feature-prose { max-width:65ch; margin-inline:auto; font-family:var(--font-editorial); font-size:1rem; line-height:1.95; }
+.feature-prose p { margin-block:0 var(--space-md); }
+.feature-prose sup { font-family:var(--font-body); font-size:.65rem; line-height:0; margin-inline-start:.25rem; }
+.feature-prose sup a { padding:.25rem; }
+.feature-sources { max-width:65ch; margin-inline:auto; margin-block:var(--space-xl); padding-block-start:var(--space-md); border-top:1px solid var(--color-rule); font-size:.85rem; color:var(--color-muted); }
+.feature-sources h2 { font-size:1rem; color:var(--color-ink); }
+.feature-sources ol { padding-inline-start:1.4rem; }
+.feature-sources li { margin-block:var(--space-xs); }
+.feature-sources a { overflow-wrap:anywhere; }
+.feature-footer { display:block; font-size:.75rem; padding-block:var(--space-lg); }
+.feature-footer p { max-width:65ch; }
+:lang(he) .feature-title h1 { font-family:var(--font-hebrew); font-weight:700; line-height:1.2; letter-spacing:-.02em; }
+:lang(he) .feature-prose { font-family:var(--font-hebrew); font-size:1.15rem; line-height:1.85; }
+@media(min-width:48rem) { .feature-prose,.feature-sources { margin-inline-start:10%; margin-inline-end:5%; } }
