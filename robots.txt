@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://omerbarak2005.github.io/omer-barak-wrestling/sitemap.xml

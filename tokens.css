@@ -1,0 +1,24 @@
+:root {
+  --color-dark: #15191f;
+  --color-paper: #f4f1ea;
+  --color-ink: #161a20;
+  --color-muted: #59636d;
+  --color-muted-dark: #b9bec6;
+  --color-accent: #d7263d;
+  --color-rule: #d4d1c9;
+  --color-dark-rule: #414750;
+  --color-focus: #e87d89;
+  --font-display: 'Oswald', 'Avenir Next Condensed', sans-serif;
+  --font-body: 'Libre Franklin', 'Avenir Next', sans-serif;
+  --font-hebrew: 'Arial', sans-serif;
+  --space-xs: .5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --dur-micro: 120ms;
+}
