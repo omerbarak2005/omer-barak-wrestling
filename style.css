@@ -103,3 +103,11 @@ footer { border-top: 1px solid var(--color-rule); display: flex; flex-wrap: wrap
 :lang(he) .feature-title h1 { font-family:var(--font-hebrew); font-weight:700; line-height:1.2; letter-spacing:-.02em; }
 :lang(he) .feature-prose { font-family:var(--font-hebrew); font-size:1.15rem; line-height:1.85; }
 @media(min-width:48rem) { .feature-prose,.feature-sources { margin-inline-start:10%; margin-inline-end:5%; } }
+
+.article-photo { margin-block: 1.5rem 2.5rem; break-inside: avoid; }
+.article-photo a { display: block; }
+.article-photo img { display: block; width: 100%; height: auto; background: #e6e2da; }
+.article-photo figcaption { margin-block-start: .65rem; font-family: var(--font-body); font-size: .78rem; line-height: 1.6; color: var(--color-muted); }
+.article-gallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; gap: 1.5rem; margin-block: 2rem 3rem; }
+.article-gallery .article-photo { margin: 0; }
+@media(max-width: 35rem) { .article-gallery { grid-template-columns: 1fr; } }
